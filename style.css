@@ -30,9 +30,15 @@ nav {
   padding: 15px;
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.5);
+  transition: all 0.25s ease;
 }
 .arrow:hover {
-  background-color: rgb(131, 147, 163);
+  background-color: rgb(144, 164, 184);
+}
+.arrow:active {
+  box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.75);
+  scale: 1.02;
 }
 .left {
   transform: rotate(180deg);
@@ -44,6 +50,11 @@ nav {
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.75);
+  transition: all 0.25s ease;
+}
+
+.frame:hover {
+  scale: 1.02;
 }
 .slider {
   display: flex;
